@@ -5,11 +5,18 @@
 </head>
 <body>
 	<div class="on">
-	<form action="coded.php" method="post" class="fil">
-		<p><b>Username</b></p><input type="text" name="name" placeholder="Your name" class="ff" required><br><br>
+	<form action="coded.php" method="post" >
+		<p><b>To sign up, fill in the information required below...</b></p>
+		<p><b>Matricule</b></p><input type="text" name="mat" placeholder="Matricule"  required><br><br>
+		<p><b>Username</b></p><input type="text" name="name" placeholder="Your name"  required><br><br>
         <p><b>Email or Phone</b></p><input type="text" name="email" placeholder="Your Email / Number" required><br><br>
         <p><b> User location</b></p><input type="text" name="Adress" placeholder="Your adress" required><br><br><br>
         <b><button type="Submit">Submit</button></b>
+    </form>
+    <form action="check.php" method="post">
+          <p><b>To verify and correct your information, fill in your matricule below...</b></p>
+          <p><b>Matricule</b></p><input type="text" name="mat" placeholder="Matricule"  required><br><br>
+          <p><button type="Submit">Verify</button></p>
     </form>
 	</div>
 </body>
